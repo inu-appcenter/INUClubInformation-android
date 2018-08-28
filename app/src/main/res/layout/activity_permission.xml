@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="36dp"
+            android:layout_marginBottom="24dp"
+            android:textColor="#81A0D9"
+            android:textSize="24sp"
+            android:text="권한"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:layout_marginEnd="36dp"
+            android:layout_marginStart="36dp"
+            android:alpha="0.05"
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:padding="36dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginEnd="24dp"
+                app:srcCompat="@drawable/ic_location_on_permission_24dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#81A0D9"
+                    android:text="위치"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:alpha="0.5"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:text="이 어플리케이션은 위치정보를 필요로 합니다."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginEnd="36dp"
+            android:layout_marginStart="36dp"
+            android:alpha="0.05"
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:padding="36dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginEnd="24dp"
+                app:srcCompat="@drawable/ic_folder_shared_permission_24dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#81A0D9"
+                    android:text="저장공간"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:alpha="0.5"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:text="이 어플리케이션은 저장공간을 필요로 합니다."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginEnd="36dp"
+            android:layout_marginStart="36dp"
+            android:alpha="0.05"
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:foreground="?android:selectableItemBackground"
+        android:layout_margin="36dp"
+        android:id="@+id/grant_permissions"
+        android:padding="18dp"
+        android:layout_gravity="bottom"
+        android:background="#81A0D9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="권한 허용하기"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+</LinearLayout>

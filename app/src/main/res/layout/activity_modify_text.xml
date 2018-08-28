@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:id="@+id/Modify_text_Page">
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="70dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="10dp"
+        android:text="동아리 수정"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/writeContents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="동아리의 내용을 적어주세요"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="8dp"/>
+
+                <EditText
+                    android:id="@+id/writeContentsEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:backgroundTint="#ffffff"
+                    android:background="@drawable/xml_border"
+                    android:textSize="11sp"
+                    android:textColor="#de000000"
+                    android:gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/writeRepresent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="동아리회장의 이름을 적어주세요"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="8dp"/>
+
+                <EditText
+                    android:id="@+id/writeRepresentEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:backgroundTint="#ffffff"
+                    android:background="@drawable/xml_border"
+                    android:textSize="11sp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="#de000000"
+                    android:gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/writePhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="동아리회장의 연락처를 적어주세요"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="8dp"/>
+
+                <EditText
+                    android:id="@+id/writePhoneEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:maxLines="1"
+                    android:backgroundTint="#ffffff"
+                    android:background="@drawable/xml_border"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:inputType="number"
+                    android:textSize="11sp"
+                    android:textColor="#de000000"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/writeApplication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="지원서 링크를 입력해주세요"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="8dp"/>
+
+                <EditText
+                    android:id="@+id/writeApplicationEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:maxLines="1"
+                    android:backgroundTint="#ffffff"
+                    android:background="@drawable/xml_border"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:inputType="text"
+                    android:textSize="11sp"
+                    android:textColor="#de000000"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/B_submit"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/btn_setting"
+                    android:text="제출" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/B_submit"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ourincheon.app_center">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+    <application
+        android:name=".application.NetworkController"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="인천대\n동아리"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".etc.SplashActivity"
+            android:theme="@style/WhiteTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".etc.Permission"
+            android:theme="@style/WhiteTheme"></activity>
+
+
+        <activity android:name=".mainActivity.Login"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/WhiteTheme"></activity>
+
+        <activity
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"
+            android:name=".mainActivity.Viewpager_main"
+            android:theme="@style/WhiteTheme"/>
+
+        <activity
+            android:name=".list_view.List"
+            android:theme="@style/WhiteTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity
+            android:name=".list_view.IntroduceClub"
+            android:theme="@style/WhiteTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity android:name=".etc.Loading"
+            android:theme="@style/WhiteTheme"></activity>
+        <activity
+            android:name=".mainActivity.Setting.ModifyEvent.Event"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/BlueTheme"/>
+        <activity
+            android:name=".mainActivity.Setting.ModifyEvent.Event_edit"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/BlueTheme"/>
+        <activity
+            android:name=".mainActivity.Setting.ModifyClubInformation.ModifyPhoto"
+            android:theme="@style/BlueTheme"/>
+        <activity
+            android:name=".mainActivity.Setting.ModifyClubInformation.ModifyText"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/BlueTheme"/>
+
+        <activity android:name=".mainActivity.Setting.Application.MakeApplication"></activity>
+        <activity android:name=".mainActivity.Setting.Application.Method_Application"></activity>
+        <activity android:name=".mainActivity.Setting.Application.New_Application"></activity>
+        
+    </application>
+
+</manifest>

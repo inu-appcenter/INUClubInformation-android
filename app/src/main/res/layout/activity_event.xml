@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:id="@+id/EventPage">
+
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="70dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="10dp"
+        android:text="행사등록"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:paddingLeft="8dp"/>
+
+        <EditText
+            android:id="@+id/eventContents"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:backgroundTint="#ffffff"
+            android:background="@drawable/xml_border"
+            android:textSize="11sp"
+            android:textColor="#de000000"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/eventLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위치"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:paddingLeft="8dp"/>
+
+        <EditText
+            android:id="@+id/locationContents"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:backgroundTint="#ffffff"
+            android:textSize="11sp"
+            android:textColor="#de000000"
+            android:inputType="text"
+            android:maxLines="1"
+            android:background="@drawable/xml_border"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날짜"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:paddingLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/dateContents"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:backgroundTint="#ffffff"
+            android:background="@drawable/xml_border"
+            android:textSize="11sp"
+            android:textColor="#de000000"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/eventTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:paddingLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/timeContents"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:backgroundTint="#ffffff"
+            android:background="@drawable/xml_border"
+            android:gravity="start"
+            android:textSize="11sp"
+            android:textColor="#de000000"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/deleteLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_toLeftOf="@+id/UpdateButton"
+            android:layout_marginRight="30dp">
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/UpdateButton"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_setting"
+            android:text="등록" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/UpdateButton"/>
+    </RelativeLayout>
+
+</LinearLayout>

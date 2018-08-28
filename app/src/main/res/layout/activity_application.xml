@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:paddingRight="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#ffffff"
+            android:text="1. 해당 지원서는 'Google Docs'를 통해 제작 합니다."/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#ffffff"
+            android:text="2. 지원서 제작시 'Google 계정'을 필요로 합니다."/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#ffffff"
+            android:text="3. PC 또는 타기기에서 제작한 지원서가 있을 경우 \n  '설정' -> '동아리 내용 수정' -> '지원서 링크 입력' 란에 \n  해당 링크를 입력해주시면 정상적으로 이용가능 합니다."/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/UseMethodLink"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:textColor="#ffffff"
+        android:text="지원서 제작 방법"
+        android:background="#B2C7D9"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+    </Button>
+
+    <Button
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:id="@+id/MakeApplicationLink"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:background="#B2C7D9"
+        android:text="새로운 지원서 만들기"
+        android:textColor="#ffffff">
+
+    </Button>
+
+
+</LinearLayout>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/homePage"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+
+        <EditText
+            android:id="@+id/SearchEdit"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_search"
+            android:hint="Search"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:paddingLeft="40dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="22dp"
+            android:layout_above="@+id/main_gridview">
+
+            <ImageView
+                android:id="@+id/main_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◀︎"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶︎"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:elevation="2dp"
+            android:id="@+id/main_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="65dp"
+            android:orientation="vertical"
+            android:background="@drawable/pure_background"
+            android:layout_alignParentBottom="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="1">
+
+                    <FrameLayout
+                        android:id="@+id/sportsLayout"
+                        android:layout_width="110dp"
+                        android:layout_height="140dp"
+                        android:layout_weight="0.2"
+                        android:layout_marginRight="3dp"
+                        android:foreground="?android:selectableItemBackground"
+                        android:background="@drawable/main_button">
+
+                        <GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/sports"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/soccer"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="스포츠"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"/>
+
+                        </GridLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:elevation="2dp"
+                        android:id="@+id/religionLayout"
+                        android:layout_width="110dp"
+                        android:layout_height="140dp"
+                        android:layout_weight="0.2"
+                        android:foreground="?android:selectableItemBackground"
+                        android:background="@drawable/main_religion_habit_button">
+
+                        <GridLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/religion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/pray"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="종교"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"/>
+
+                        </GridLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:elevation="3dp"
+                        android:id="@+id/cultureLayout"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="110dp"
+                        android:layout_height="140dp"
+                        android:layout_weight="0.2"
+                        android:foreground="?android:selectableItemBackground"
+                        android:background="@drawable/main_culture_study_button">
+
+                        <GridLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/culture"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/party"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="문화"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"/>
+
+                        </GridLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <FrameLayout
+                        android:elevation="2dp"
+                        android:id="@+id/bongsaLayout"
+                        android:layout_width="110dp"
+                        android:layout_height="140dp"
+                        android:layout_weight="0.2"
+                        android:layout_marginRight="3dp"
+                        android:foreground="?android:selectableItemBackground"
+                        android:background="@drawable/main_bongsa">
+
+                        <GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/bongsa"
+                                android:layout_marginBottom="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/love"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="봉사"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"/>
+
+                        </GridLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:elevation="2dp"
+                        android:id="@+id/habitLayout"
+                        android:layout_width="110dp"
+                        android:layout_height="140dp"
+                        android:layout_weight="0.2"
+                        android:foreground="?android:selectableItemBackground"
+                        android:background="@drawable/main_habit">
+
+                        <GridLayout
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/habit"
+                                android:layout_marginBottom="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/card" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="취미/전시"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"/>
+
+                        </GridLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:elevation="2dp"
+                        android:id="@+id/studyLayout"
+                        android:layout_width="110dp"
+                        android:layout_height="140dp"
+                        android:layout_weight="0.2"
+                        android:layout_marginLeft="3dp"
+                        android:foreground="?android:selectableItemBackground"
+                        android:background="@drawable/main_study">
+
+                        <GridLayout
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/study"
+                                android:layout_marginBottom="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/book" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="교양/학술"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"/>
+
+                        </GridLayout>
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/searchListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/transparent">
+    </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
