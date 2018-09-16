@@ -19,9 +19,9 @@ import com.google.gson.JsonObject;
 import com.ourincheon.app_center.R;
 import com.ourincheon.app_center.application.NetworkController;
 import com.ourincheon.app_center.mainActivity.Home.MainActivity;
-import com.ourincheon.app_center.mainActivity.Home.SeachListItem;
-import com.ourincheon.app_center.mainActivity.Home.SearchList;
-import com.ourincheon.app_center.mainActivity.Home.SearchListViewAdaptor;
+import com.ourincheon.app_center.mainActivity.Home.SearchBar.SeachListItem;
+import com.ourincheon.app_center.mainActivity.Home.SearchBar.SearchList;
+import com.ourincheon.app_center.mainActivity.Home.SearchBar.SearchListViewAdaptor;
 
 import java.util.ArrayList;
 

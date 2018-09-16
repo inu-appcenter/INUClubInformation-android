@@ -3,6 +3,7 @@ package com.ourincheon.app_center.list_view.Banner;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,17 +11,16 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.ourincheon.app_center.R;
-import com.ourincheon.app_center.mainActivity.Home.Banner.BannerItem;
 
 import java.util.ArrayList;
 
-public class BannerAdaptor extends PagerAdapter {
+public class BannerAdaptor_introduce extends PagerAdapter {
 
-    private ArrayList<com.ourincheon.app_center.mainActivity.Home.Banner.BannerItem> itemlist;
+    private ArrayList<BannerItem_introduce> itemlist;
     private int listSize;
     private LayoutInflater inflater = null;
 
-    public BannerAdaptor(ArrayList<BannerItem> itemlist){
+    public BannerAdaptor_introduce(ArrayList<BannerItem_introduce> itemlist){
         this.itemlist =itemlist;
         this.listSize = itemlist.size();
     }
@@ -46,12 +46,19 @@ public class BannerAdaptor extends PagerAdapter {
         Context context = container.getContext();
 
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.banner_item, container, false);
+        View view = inflater.inflate(R.layout.banner_item_introduce, container, false);
 
         ImageView banner = (ImageView) view.findViewById(R.id.bannerImage);
 
-        String imageUrl = "http://appcenter.us.to:3303/" + itemlist.get(position).bannerImage;
-        Glide.with(context).load(imageUrl).into(banner);
+        Log.d("testBanner", String.valueOf(itemlist.size()) + " " + itemlist.get(0).toString());
+
+        if(itemlist.size() <= 1 && itemlist.get(0).bannerImage.toString() == "noImage"){
+            banner.setImageResource(R.drawable.group_6);
+        }
+        else{
+            String imageUrl = "http://appcenter.us.to:3303/" + itemlist.get(position).bannerImage;
+            Glide.with(context).load(imageUrl).into(banner);
+        }
 
         container.addView(view);
 

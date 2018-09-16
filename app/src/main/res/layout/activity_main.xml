@@ -23,66 +23,64 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp">
-
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="22dp"
-            android:layout_above="@+id/main_gridview">
-
-            <ImageView
-                android:id="@+id/main_image"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="◀︎"
-                android:layout_marginLeft="20dp"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="▶︎"
-                android:layout_marginRight="20dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"/>
-
-        </RelativeLayout>
-
-
-        <LinearLayout
-            android:elevation="2dp"
-            android:id="@+id/main_gridview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="65dp"
             android:orientation="vertical"
-            android:background="@drawable/pure_background"
-            android:layout_alignParentBottom="true">
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="65dp"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:gravity="center">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/main_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:id="@+id/indicatorLayout"
+                    android:orientation="horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"></LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:elevation="2dp"
+                android:id="@+id/main_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:orientation="vertical"
+                android:background="@drawable/pure_background"
+                android:weightSum="1">
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
                     android:orientation="horizontal"
                     android:gravity="center_horizontal"
                     android:layout_marginBottom="2dp"
                     android:layout_marginTop="15dp"
-                    android:weightSum="1">
+                    android:weightSum="3">
 
                     <FrameLayout
                         android:id="@+id/sportsLayout"
-                        android:layout_width="110dp"
-                        android:layout_height="140dp"
-                        android:layout_weight="0.2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:layout_marginRight="3dp"
                         android:foreground="?android:selectableItemBackground"
                         android:background="@drawable/main_button">
@@ -116,9 +114,9 @@
                     <FrameLayout
                         android:elevation="2dp"
                         android:id="@+id/religionLayout"
-                        android:layout_width="110dp"
-                        android:layout_height="140dp"
-                        android:layout_weight="0.2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:foreground="?android:selectableItemBackground"
                         android:background="@drawable/main_religion_habit_button">
 
@@ -151,9 +149,9 @@
                         android:elevation="3dp"
                         android:id="@+id/cultureLayout"
                         android:layout_marginLeft="3dp"
-                        android:layout_width="110dp"
-                        android:layout_height="140dp"
-                        android:layout_weight="0.2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:foreground="?android:selectableItemBackground"
                         android:background="@drawable/main_culture_study_button">
 
@@ -185,18 +183,19 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:layout_weight="0.5"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal"
-                    android:weightSum="1">
+                    android:weightSum="3">
 
                     <FrameLayout
                         android:elevation="2dp"
                         android:id="@+id/bongsaLayout"
-                        android:layout_width="110dp"
-                        android:layout_height="140dp"
-                        android:layout_weight="0.2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:layout_marginRight="3dp"
                         android:foreground="?android:selectableItemBackground"
                         android:background="@drawable/main_bongsa">
@@ -230,9 +229,9 @@
                     <FrameLayout
                         android:elevation="2dp"
                         android:id="@+id/habitLayout"
-                        android:layout_width="110dp"
-                        android:layout_height="140dp"
-                        android:layout_weight="0.2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:foreground="?android:selectableItemBackground"
                         android:background="@drawable/main_habit">
 
@@ -264,9 +263,9 @@
                     <FrameLayout
                         android:elevation="2dp"
                         android:id="@+id/studyLayout"
-                        android:layout_width="110dp"
-                        android:layout_height="140dp"
-                        android:layout_weight="0.2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:layout_marginLeft="3dp"
                         android:foreground="?android:selectableItemBackground"
                         android:background="@drawable/main_study">
@@ -299,17 +298,19 @@
 
                 </LinearLayout>
 
+            </LinearLayout>
+
+
+
         </LinearLayout>
 
-    </RelativeLayout>
-
-    <LinearLayout
-        android:id="@+id/searchListView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/transparent">
-    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/searchListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/transparent">
+        </LinearLayout>
     </RelativeLayout>
 
 </LinearLayout>

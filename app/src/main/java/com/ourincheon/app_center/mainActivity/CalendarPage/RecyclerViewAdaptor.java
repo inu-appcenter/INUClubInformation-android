@@ -43,9 +43,11 @@ public class RecyclerViewAdaptor extends RecyclerView.Adapter<ViewHolder>{
         TextView tv_contents = holder.contents;
         TextView tv_times = holder.times;
         TextView tv_location = holder.location;
+        TextView tv_clubname = holder.clubname;
 
         tv_date.setText(recyclerViewItem.rDate);
 
+        tv_clubname.setText(recyclerViewItem.rClubname);
         tv_contents.setText(recyclerViewItem.rContents);
         tv_times.setText(recyclerViewItem.rTime);
         tv_location.setText(recyclerViewItem.rLocation);
@@ -64,10 +66,12 @@ class ViewHolder extends RecyclerView.ViewHolder{
     public TextView contents;
     public TextView times;
     public TextView location;
+    public TextView clubname;
 
     public ViewHolder(View itemView) {
         super(itemView);
 
+        clubname = (TextView) itemView.findViewById(R.id.rc_clubname);
         date = (TextView) itemView.findViewById(R.id.rc_date);
         location = (TextView) itemView.findViewById(R.id.rc_location);
         contents = (TextView) itemView.findViewById(R.id.rc_contents);

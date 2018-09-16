@@ -126,6 +126,7 @@ public class Calender extends Fragment{
 
                 if(response.body().toString().length() <= 3){
                     Log.d("일정", "등록된 행사 없음");
+                    recyclerViewItem.rClubname = null;
                     recyclerViewItem.rDate = date;
                     recyclerViewItem.rContents = null;
                     recyclerViewItem.rTime = "오늘은 일정이 없습니다";
@@ -136,9 +137,10 @@ public class Calender extends Fragment{
                     for(int i = 0; i < response.body().size(); i++){
                         recyclerViewItem = new RecyclerViewItem();
                         recyclerViewItem.rDate = date;
-                        recyclerViewItem.rContents = response.body().get(i).getAsJsonObject().get("eventname").toString().replace("\"","");
-                        recyclerViewItem.rTime = response.body().get(i).getAsJsonObject().get("time").toString().replace("\"", "");
-                        recyclerViewItem.rLocation = response.body().get(i).getAsJsonObject().get("location").toString().replace("\"", "");
+                        recyclerViewItem.rClubname = response.body().get(i).getAsJsonObject().get("clubname").toString().replace("\"","");
+                        recyclerViewItem.rContents ="내용: " + response.body().get(i).getAsJsonObject().get("eventname").toString().replace("\"","");
+                        recyclerViewItem.rTime = "시간: " +response.body().get(i).getAsJsonObject().get("time").toString().replace("\"", "");
+                        recyclerViewItem.rLocation = "장소: " +response.body().get(i).getAsJsonObject().get("location").toString().replace("\"", "");
                         recyclerViewItemList.add(recyclerViewItem);
                     }
                     Log.d("로그", "등록된 행사 있음");

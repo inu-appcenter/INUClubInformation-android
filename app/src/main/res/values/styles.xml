@@ -50,5 +50,18 @@
         <item name="android:datePickerStyle">@style/CustomDatePicker</item>
     </style>
 
+    <style type="attr" name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/grayColor</item>
+    </style>
+
+    <style name="JustCalendar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/calendarcolor</item>
+    </style>
 
 </resources>

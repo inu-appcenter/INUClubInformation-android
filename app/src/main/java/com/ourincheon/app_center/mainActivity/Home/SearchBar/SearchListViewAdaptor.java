@@ -1,4 +1,4 @@
-package com.ourincheon.app_center.mainActivity.Home;
+package com.ourincheon.app_center.mainActivity.Home.SearchBar;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.ourincheon.app_center.R;
+import com.ourincheon.app_center.mainActivity.Home.SearchBar.SeachListItem;
 
 import java.util.ArrayList;
 

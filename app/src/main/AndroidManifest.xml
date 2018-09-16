@@ -32,12 +32,12 @@
 
         <activity android:name=".mainActivity.Login"
             android:windowSoftInputMode="stateAlwaysHidden"
-            android:theme="@style/WhiteTheme"></activity>
+            android:theme="@style/AppTheme2"></activity>
 
         <activity
             android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"
             android:name=".mainActivity.Viewpager_main"
-            android:theme="@style/WhiteTheme"/>
+            android:theme="@style/AppTheme2"/>
 
         <activity
             android:name=".list_view.List"

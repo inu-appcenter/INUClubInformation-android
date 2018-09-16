@@ -1,4 +1,4 @@
-package com.ourincheon.app_center.mainActivity.Home;
+package com.ourincheon.app_center.mainActivity.Home.SearchBar;
 
 public class SeachListItem {
     public String s_img;

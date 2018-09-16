@@ -15,7 +15,8 @@
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:maxDate="12/31/2038"
-            android:minDate="01/01/2018">
+            android:minDate="01/01/2018"
+            android:theme="@style/JustCalendar">
         </CalendarView>
 
 

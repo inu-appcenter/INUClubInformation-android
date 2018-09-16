@@ -11,4 +11,9 @@
     <color name="transparent">#1A000000</color>
 
     <color name="loginfale">#CC3D3D</color>
+
+    <color name="pinkColor">#FFB2D9</color>
+    <color name="grayColor">#D5D5D5</color>
+    <color name="app2">#5D5D5D</color>
+    <color name="calendarcolor">#6799FF</color>
 </resources>

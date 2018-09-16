@@ -1,4 +1,4 @@
-package com.ourincheon.app_center.mainActivity.Home;
+package com.ourincheon.app_center.mainActivity.Home.SearchBar;
 
 import android.content.Context;
 import android.util.AttributeSet;
