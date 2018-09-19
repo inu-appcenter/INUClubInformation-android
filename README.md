@@ -1,4 +1,4 @@
-INU CLUB
+# INU CLUB
 
 # 인천대학교 동아리 어플
 
