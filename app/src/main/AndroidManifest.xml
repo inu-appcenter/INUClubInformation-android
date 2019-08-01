@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--안드로이드 어플리케이션을 구성하는 컴포넌트들(Activity, Service, Broadcast Receiver, Content Provider) 기술
+- 컴포넌트에 대한 해당 클래스명을 정의하고, 처리할 수 있는 기능이 무엇인지 Intent-filter를 정의
+> 이를 통해 한 안드로이드 어플리케이션 안에 어떤 Component들이 존재하며, 어떤 조건에 해당 Component가 시작돼야 하는지 안드로이드 플랫폼이 알 수 있다.
+- 안드로이드 어플리케이션이 안드로이드 플랫폼의 제한된 API에 접근하거나 다른 어플리케이션의 제한된 컴포넌트를 사용하기 위해서 필요한 권한을 설정
+- 안드로이드 어플리케이션은 자신의 Component를 쉽게 사용할 수 없도록 권한을 설정할 수 있다.
+- 안드로이드 어플리케이션 개발이나 테스트 단계에서 어플리케이션의 동작을 로깅이난 모니터링하기 위한 Instrumenttation 클래스를 설정
+> 개발 및 테스트가 끝나 실제로 사용하도록 배포시 이를 삭제해야 한다.
+- 안드로이드 어플리케이션을 구동하기 위한 최소한의 SDK(Software Development Kit) 버전(젤리빈, 킷캣, 오레오 등)을 정의
+- 안드로이드 어플리케이션이 사용하는 다른 추가적인 라이브러리들을 정의-->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ourincheon.app_center">
-
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 안드로이드 어플리케이션을 위한 자바 패키지명 정의
+     이 패키지명은 전체 시스템 상으로 유일-->
+    <uses-permission android:name="android.permission.INTERNET"/>       <!--권한 추가_인터넷 사용-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /><!--권한추가_위치정보 제공-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /><!--권한 추가_외부저장소 파일 불러오기, 안드로이드 4.4 킷캣(API 19)이상이면 필요X-->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--권한추가_외부저장소 파일 읽기쓰기 모두 지원-->
 
-
-
+    <!--<manifest> 밑에는 하나의 <application>만 정의-->
     <application
         android:name=".application.NetworkController"
         android:allowBackup="true"
@@ -17,12 +28,12 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!--icon: 어플 아이콘, label: 어플 제목-->
         <activity android:name=".etc.SplashActivity"
-            android:theme="@style/WhiteTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+            android:theme="@style/WhiteTheme"><!--스플래시-->
+            <intent-filter><!--액티비티 언제 시작?-->
+                <action android:name="android.intent.action.MAIN" /><!--어떤작업 처리 가능?-->
+                <category android:name="android.intent.category.LAUNCHER" /><!--컴포넌트 유형-->
             </intent-filter>
         </activity>
 
@@ -33,11 +44,13 @@
         <activity android:name=".mainActivity.Login"
             android:windowSoftInputMode="stateAlwaysHidden"
             android:theme="@style/AppTheme2"></activity>
+        <!--state~: 액티비티 실행시 키보드가 항상 자동으로 올라오는 것을 방지-->
 
         <activity
             android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"
             android:name=".mainActivity.Viewpager_main"
             android:theme="@style/AppTheme2"/>
+        <!--ad~: UI와 관계없이 키보드가 올라오게 하기-->
 
         <activity
             android:name=".list_view.List"
@@ -72,5 +85,4 @@
         <activity android:name=".mainActivity.Setting.Application.New_Application"></activity>
         
     </application>
-
 </manifest>

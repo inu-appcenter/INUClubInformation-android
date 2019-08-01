@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="734">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="120"
+            android:text="  " />
+
+        <ImageView
+            android:layout_width="276.9dp"
+            android:layout_height="0dp"
+            android:layout_weight="296.2"
+            android:layout_gravity="center"
+            android:background="@drawable/splash_new"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="130.8"
+            android:text="  " />
+
+        <ImageView
+            android:id="@+id/LoginOn"
+            android:layout_width="276.9dp"
+            android:layout_height="0dp"
+            android:layout_weight="48"
+            android:layout_gravity="center"
+            android:background="@drawable/loginon"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="139"
+            android:text="  " />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

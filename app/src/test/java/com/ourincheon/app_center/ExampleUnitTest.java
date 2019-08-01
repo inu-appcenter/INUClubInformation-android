@@ -12,6 +12,6 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
+        assertEquals(4, 2 + 2);     //두 값이 같아야 한다고 주장, 값 자체를 비교(assertSame은 객체 포인터 비교)
     }
 }

@@ -1,17 +1,18 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.application'     //안드로이드 플러그인 사용을 gradle에 적용
+                                            //top-level에서 선언
 
-android {
-    compileSdkVersion 26
-    buildToolsVersion '27.0.3'
-    defaultConfig {
-        applicationId "com.ourincheon.app_center"
-        minSdkVersion 23
-        targetSdkVersion 26
-        versionCode 4
-        versionName "1.4"
+android {       //안드로이드 빌드 관련 설정
+    compileSdkVersion 26        //어플 컴파일시 사용할 SDK버전(Oreo), 보통 지원할 수 있는 가장 높은 API 버전
+    buildToolsVersion '27.0.3'  //사용할 빌드툴 버전 명시
+    defaultConfig {         //AndroidManifest.xml 에서 사용하는 설정들에 대해 동적인 옵션을 주고싶을 때
+        applicationId "com.ourincheon.app_center"   //자바 패키지 이름, 플레이스토어 고유 식별 ID, 앱 게시후 절대 변경하지 말 것.
+        minSdkVersion 23        //어플 설치 가능한 최소 API레벨
+        targetSdkVersion 26     //해당 어플 개발시 테스트한 API 레벨
+        versionCode 4       //정수값을 이용, 플레이 스토어 내부적으로 상위 버전을 구분하는데 사용
+        versionName "1.4"   //플레이 스토어에서 사용자에게 보여주기 위한 값
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    buildTypes {
+    buildTypes {        //빌드 타입 종류 지정
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -25,7 +26,7 @@ android {
     }
 }
 
-dependencies {
+dependencies {      //라이브러리 같은 의존성 추가 시
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -35,10 +36,10 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     implementation 'com.google.code.gson:gson:2.7'
-    implementation 'com.squareup.okhttp3:okhttp:3.8.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
-    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.8.0'      //Android 및 Java 용 라이브러리_HTTP, HTTP/2 통신 용이
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'     //NetworkController_okhttp3
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'      //NetworkController_retrofit3
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'        //NetworkController_retrofit3
 
     implementation 'com.github.bumptech.glide:glide:3.6.1'
 

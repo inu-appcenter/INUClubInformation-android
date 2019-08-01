@@ -8,7 +8,7 @@ import java.util.HashSet;
 import okhttp3.Interceptor;
 import okhttp3.Response;
 
-public class ReceieveCookiesInterceptor implements Interceptor {
+public class ReceieveCookiesInterceptor implements Interceptor {        //Intercepter 객체를 생성, Set-Cookie에 접근, 헤더 빼오기
 
     @Override
     public Response intercept(Chain chain) throws IOException {

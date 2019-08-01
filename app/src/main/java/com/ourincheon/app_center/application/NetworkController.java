@@ -4,8 +4,8 @@ import android.app.Application;
 
 import com.ourincheon.app_center.network.NetworkInterface;
 
-import okhttp3.OkHttpClient;
-import retrofit2.Retrofit;
+import okhttp3.OkHttpClient;    //okhttp3
+import retrofit2.Retrofit;      //retrofit2
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NetworkController extends Application{
@@ -41,17 +41,16 @@ public class NetworkController extends Application{
 
     public void buildService(){
 
-        OkHttpClient.Builder okClient = new OkHttpClient.Builder();
-        okClient.interceptors().add(new AddCookiesInterceptor());
-        okClient.interceptors().add(new ReceieveCookiesInterceptor());
+        OkHttpClient.Builder okClient = new OkHttpClient.Builder();     //client 객체 만들기
+        okClient.interceptors().add(new AddCookiesInterceptor());       //okClient쿠키
+        okClient.interceptors().add(new ReceieveCookiesInterceptor());  //okClient쿠키
 
-        this.networkInterface = (NetworkInterface) new Retrofit.Builder()
+        this.networkInterface = (NetworkInterface) new Retrofit.Builder()       //client 객체 만들기_설정
                 .baseUrl(URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okClient.build())
                 .build()
                 .create(NetworkInterface.class);
     }
-
 }
 
