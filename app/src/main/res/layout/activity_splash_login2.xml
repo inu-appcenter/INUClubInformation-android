@@ -54,16 +54,42 @@
             android:layout_gravity="center"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="16"
-                android:text="학번자리"/>
+                android:layout_weight="18"
+                android:weightSum="327"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="17"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/personxxx"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:layout_height="match_parent"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="290"
+                    android:layout_height="match_parent"
+                    android:background=""
+                    android:textSize="14dp"
+                    android:hint="학번을 입력하세요"
+                    android:fontFamily="@font/notosansregular"
+                    android:textColorHint="#b4b4b4"
+                    />
+
+            </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="19"
+                android:layout_weight="17"
                 android:text="   "/>
 
             <TextView
@@ -75,19 +101,45 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="16"
+                android:layout_weight="33"
                 android:text="    "/>
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="16"
-                android:text="비번자리"/>
+                android:layout_weight="18"
+                android:weightSum="327"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="17"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/lockxxx"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:layout_height="match_parent"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="290"
+                    android:layout_height="match_parent"
+                    android:background=""
+                    android:textSize="14dp"
+                    android:hint="●●●●●●●"
+                    android:fontFamily="@font/notosansregular"
+                    android:textColorHint="#b4b4b4"
+                    />
+
+            </LinearLayout>
 
             <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="17"
+            android:layout_weight="16"
             android:text="    "/>
 
            <TextView
@@ -127,9 +179,13 @@
             android:layout_weight="17"
             android:gravity="center"
             android:text="나중에 할래요"
+            android:fontFamily="@font/notosansregular"
             android:textSize="12dp"
             android:textColor="#b4b4b4"
-            android:clickable="true"/>
+            android:clickable="true"
+            android:layout_paddingBottom="1dp"
+
+            />
 
         <TextView
             android:layout_width="match_parent"
