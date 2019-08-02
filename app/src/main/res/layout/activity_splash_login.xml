@@ -20,7 +20,7 @@
             android:layout_height="0dp"
             android:layout_weight="296.2"
             android:layout_gravity="center"
-            android:background="@drawable/splash_new"
+            android:background="@mipmap/splashnewxxx"
             />
 
         <TextView
@@ -35,7 +35,7 @@
             android:layout_height="0dp"
             android:layout_weight="48"
             android:layout_gravity="center"
-            android:background="@drawable/loginon"
+            android:background="@mipmap/loginonxxx"
             android:clickable="true"
             />
 

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="734">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="59.7"
+            android:text="  " />
+
+        <ImageView
+            android:layout_width="121.2dp"
+            android:layout_height="0dp"
+            android:layout_weight="53.6"
+            android:layout_gravity="center"
+            android:background="@drawable/inusmile"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12.7"
+            android:text="  " />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18"
+            android:gravity="center"
+            android:text="인천대 동아리에 오신 걸 환영합니다"
+            android:textColor="#000000"
+            android:textSize="14dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="133"
+            android:text="  " />
+
+        <LinearLayout
+            android:layout_width="327dp"
+            android:layout_height="0dp"
+            android:layout_weight="106"
+            android:weightSum="106"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="18"
+                android:weightSum="327"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="17"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/personxxx"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:layout_height="match_parent"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="290"
+                    android:layout_height="match_parent"
+                    android:background=""
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:hint="학번을 입력하세요"
+                    android:fontFamily="@font/notosansregular"
+                    android:textColorHint="#b4b4b4"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="17"
+                android:text="   "/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#7f7f7f"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="33"
+                android:text="    "/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="18"
+                android:weightSum="327"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="17"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/lockxxx"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:layout_height="match_parent"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="290"
+                    android:layout_height="match_parent"
+                    android:background=""
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:hint="●●●●●●●"
+                    android:fontFamily="@font/notosansregular"
+                    android:textColorHint="#b4b4b4"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="16"
+                android:text="    "/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#7f7f7f"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="164"
+            android:text="  " />
+
+        <ImageView
+            android:id="@+id/LoginOn"
+            android:layout_width="276.9dp"
+            android:layout_height="0dp"
+            android:layout_weight="48"
+            android:layout_gravity="center"
+            android:background="@mipmap/loginonxxx"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="16"
+            android:text="  " />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="17"
+            android:gravity="center"
+            android:text="나중에 할래요"
+            android:fontFamily="@font/notosansregular"
+            android:textSize="12dp"
+            android:textColor="#b4b4b4"
+            android:clickable="true"
+            android:layout_paddingBottom="1dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="106"
+            android:text="  " />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
