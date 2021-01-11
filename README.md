@@ -1,4 +1,4 @@
-# 공지
+# 중요 공지
 
 **INU 동아리 안드로이드**는 [별도의 저장소](https://github.com/inu-appcenter/club-android)로 통합되었으며며, 이 저장소는 아카이브 처리되었습니다.
 
